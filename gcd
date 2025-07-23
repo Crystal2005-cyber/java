@@ -1,0 +1,16 @@
+import java.util.*;
+class main{
+      public static int gcd(int a,int b){
+        while(b!=0){
+        int temp=a%b;
+        a=b;
+        b=temp;
+   }
+  system.out.println(a);
+}
+  public static void main(string[] args){
+  Scanner sc= new Scanner(System.in);
+  int a= sc.nextInt();
+  int b= sc.nextInt();
+ }
+}
