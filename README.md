@@ -1,3 +1,6 @@
-java
-
+Java
 ______
+Java is a high-level, object-oriented programming language used to build web apps, mobile applications, and enterprise software systems.
+
+Known for its Write Once, Run Anywhere capability, which means code written in Java can run on any device that supports the Java Virtual Machine (JVM).
+Syntax and structure are similar to C-based languages like C++ and C#.
