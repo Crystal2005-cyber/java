@@ -1,0 +1,53 @@
+⚡ Why is Java Platform Independent?
+
+Java programs are written once and can run anywhere → WORA (Write Once, Run Anywhere).
+
+This is achieved because:
+
+Java source code (.java) is compiled into bytecode (.class) by the Java Compiler (javac).
+
+Bytecode is not machine-specific – it’s an intermediate language.
+
+The Java Virtual Machine (JVM) on each platform interprets (or JIT compiles) the bytecode into native machine code.
+
+Since every OS (Windows, Linux, Mac, Android) has its own JVM implementation, the same bytecode can run anywhere without recompiling.
+
+👉 This bytecode + JVM mechanism makes Java platform independent.
+
+⚡ Why is Java both interpreted and compiled?
+
+Compiled:
+
+Java source code is first compiled by javac into bytecode (.class).
+
+Compilation happens only once.
+
+Interpreted:
+
+At runtime, the JVM interprets the bytecode line by line into native machine instructions.
+
+Also JIT (Just-In-Time Compilation):
+
+JVM also uses a JIT compiler that compiles frequently used parts of bytecode into native machine code for faster execution.
+
+Hence, Java is hybrid → both compiled (into bytecode) and interpreted (by JVM).
+
+⚡ Why is Java considered slow?
+
+Compared to languages like C/C++:
+
+Extra Layer (JVM):
+
+Java runs on JVM, not directly on hardware.
+
+This extra interpretation makes it slower than native machine code.
+
+Automatic Memory Management (Garbage Collection):
+
+Garbage Collector (GC) adds overhead while reclaiming unused memory.
+
+Abstraction & Security Checks:
+
+Java performs runtime checks (array bounds, type casting, null pointer checks, etc.) which reduce raw speed.
+
+👉 However, with JIT compilation, modern Java is much faster than it used to be and often close to C++ speed in real-world applications.
