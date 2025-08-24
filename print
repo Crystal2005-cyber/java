@@ -1,0 +1,75 @@
+1.
+class PrintVariables {
+    public static void main(String[] args) {
+        Double number = -10.6;
+
+        System.out.println("I am " + "awesome.");
+        System.out.println("Number = " + number);
+    }
+}
+🔎 Step-by-step Execution:
+Double number = -10.6;
+→ A wrapper class object Double is created holding the value -10.6.
+System.out.println("I am " + "awesome.");
+→ String concatenation happens.
+Output:
+I am awesome.
+System.out.println("Number = " + number);
+→ "Number = " is concatenated with the value of number (-10.6).
+Output:
+Number = -10.6
+✅ Final Output:
+I am awesome.
+Number = -10.6
+
+2.
+int a = 3;
+int b = 4;
+
+System.out.println( a + b );
+System.out.println( "3" + "4" );
+System.out.println( "" + a + b );
+System.out.println( 3 + 4 + a + " " + b + a );
+System.out.println( "Result: " + a + b );
+System.out.println( "Result: " + ( a + b ) );
+
+🔎 Step-by-step Execution:
+System.out.println( a + b );
+→ 3 + 4 = 7
+✅ Output:
+
+7
+System.out.println( "3" + "4" );
+→ String concatenation "3" + "4" = "34"
+✅ Output:
+34
+System.out.println( "" + a + b );
+→ "" + a → "3" (string)
+→ "3" + b → "34"
+✅ Output:
+34
+System.out.println( 3 + 4 + a + " " + b + a );
+→ First part is numbers only: 3 + 4 + a = 3 + 4 + 3 = 10
+→ Now "10" + " " → "10 "
+→ "10 " + b → "10 4"
+→ "10 4" + a → "10 43"
+✅ Output:
+10 43
+System.out.println( "Result: " + a + b );
+→ "Result: " + a → "Result: 3"
+→ "Result: 3" + b → "Result: 34"
+✅ Output:
+Result: 34
+System.out.println( "Result: " + ( a + b ) );
+→ Parentheses first: (a + b) = 3 + 4 = 7
+→ "Result: " + 7 → "Result: 7"
+✅ Output:
+Result: 7
+✅ Final Program Output:
+7
+34
+34
+10 43
+Result: 34
+Result: 7
+
