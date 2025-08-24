@@ -1,0 +1,34 @@
+
+public class ASCII_Table {
+    public static void main(String[] args) {
+        System.out.println("ASCII Table (0 - 127):");
+        System.out.println("------------------------");
+        for (int i = 0; i < 128; i++) {
+            char ch = (char) i;  // Convert int to char
+            System.out.println(i + " -> " + ch);
+        }
+    }
+}
+
+sample output:
+ASCII Table (0 - 127):
+------------------------
+0 -> 
+1 -> 
+2 -> 
+...
+32 ->   (space)
+33 -> !
+34 -> "
+35 -> #
+...
+65 -> A
+66 -> B
+67 -> C
+...
+97 -> a
+98 -> b
+99 -> c
+...
+127 -> ⌂
+
