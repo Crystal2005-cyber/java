@@ -1,4 +1,4 @@
-⚡ Why is Java Platform Independent?
+⚡1. Why is Java Platform Independent?
 
 Java programs are written once and can run anywhere → WORA (Write Once, Run Anywhere).
 
@@ -14,7 +14,7 @@ Since every OS (Windows, Linux, Mac, Android) has its own JVM implementation, th
 
 👉 This bytecode + JVM mechanism makes Java platform independent.
 
-⚡ Why is Java both interpreted and compiled?
+⚡2. Why is Java both interpreted and compiled?
 
 Compiled:
 
@@ -32,7 +32,7 @@ JVM also uses a JIT compiler that compiles frequently used parts of bytecode int
 
 Hence, Java is hybrid → both compiled (into bytecode) and interpreted (by JVM).
 
-⚡ Why is Java considered slow?
+⚡ 3. Why is Java considered slow?
 
 Compared to languages like C/C++:
 
@@ -51,3 +51,33 @@ Abstraction & Security Checks:
 Java performs runtime checks (array bounds, type casting, null pointer checks, etc.) which reduce raw speed.
 
 👉 However, with JIT compilation, modern Java is much faster than it used to be and often close to C++ speed in real-world applications.
+
+ 4. Guess the output:
+    class Output {
+    public static void main(String[] args) {
+        System.out.println("1. println ");
+        System.out.println("2. println ");
+        System.out.print("1. print ");
+        System.out.print("2. print");
+    }
+}
+🔎 Step-by-step execution:
+System.out.println("1. println ");
+→ Prints 1. println and moves to a new line.
+
+System.out.println("2. println ");
+→ Prints 2. println and moves to a new line.
+
+System.out.print("1. print ");
+→ Prints 1. print but does NOT move to a new line.
+
+System.out.print("2. print");
+→ Prints 2. print on the same line as above.
+
+✅ Final Output:
+arduino
+Copy
+Edit
+1. println 
+2. println 
+1. print 2. print
