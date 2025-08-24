@@ -73,3 +73,28 @@ Result: 7
 Result: 34
 Result: 7
 
+3.
+char a = 65;
+char b = 'A';
+
+System.out.println(a);
+System.out.println(b);
+
+🔎 Step-by-step:
+char a = 65;
+In Java, char stores a Unicode code point.
+65 in Unicode corresponds to 'A'.
+So a actually stores 'A'.
+
+char b = 'A';
+Directly storing the character 'A'.
+System.out.println(a);
+Prints the character corresponding to 65.
+✅ Output: A
+System.out.println(b);
+Prints 'A' directly.
+✅ Output: A
+✅ Final Output:
+
+A
+A
